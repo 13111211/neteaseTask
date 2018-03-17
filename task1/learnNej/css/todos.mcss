@@ -1,0 +1,14 @@
+body{
+    background: #f5f5f5;
+}
+#todo-app{
+    width: 550px;
+    margin: 0 auto;
+
+    .todo-header{
+        h1{
+            font-size: 100px;
+            color: rgba(175, 47, 47, 0.15);
+        }
+    }
+}

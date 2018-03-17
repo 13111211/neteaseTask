@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>todos</title>
+        <link type="text/css" rel="stylesheet" href="css/iconfont/iconfont.css" />
+        <link type="text/css" rel="stylesheet" href="css/todos.css" />
+    </head>
+    <body onselectstart="return false;">
+        <div id="todo-app">
+            <header class="todo-header">
+                <h1 class="todoTitle">todos</h1>
+            </header>
+            <section class="todo-main">
+                <div class="new-todo">
+                    <!--H5新特性 autofocus 当页面加载时input元素自动获得焦点-->
+                    <input class="new-todo-input" placeholder="需要完成什么事情？" autofocus="autofocus" />
+                    <span><i class="all-todo-toggle iconfont icon-toggle"></i></span>
+                </div>
+                <ul class="todo-list" id="todo-list">
+                </ul>
+                <footer class="todo-footer">
+                    <span class="todo-count"><strong id="todo-count"></strong>条</span>
+                    <a class="clear-completed" id="clear-completed">清除已完成</a>
+                    <ul class="todo-filter">
+                        <li class="todo-filter-item active" filterType="all"><a>所有</a></li>
+                        <li class="todo-filter-item" filterType="false"><a>未完成</a></li>
+                        <li class="todo-filter-item" filterType="true"><a>已完成</a></li>
+                    </ul>
+                </footer>
+            </section>
+        </div>
+
+        <script src="js/nej/src/define.js"></script>
+        <script src="js/todos.js"></script>
+    </body>
+</html>
